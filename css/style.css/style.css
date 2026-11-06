@@ -1,0 +1,126 @@
+body {
+    font-family: 'Segoe UI', 'Noto Sans Kannada', 'Noto Sans Devanagari', 'Noto Sans Tamil', sans-serif;
+    background: #f8f9fa;
+}
+
+.language-picker {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1000;
+}
+
+.picker-content {
+    text-align: center;
+    padding: 20px;
+    max-width: 400px;
+    width: 100%;
+}
+
+.app-icon {
+    font-size: 64px;
+    margin-bottom: 10px;
+}
+
+.picker-content h1 {
+    font-size: 22px;
+    margin-bottom: 8px;
+}
+
+.subtitle {
+    color: #666;
+    margin-bottom: 24px;
+}
+
+.lang-btn {
+    display: block;
+    width: 100%;
+    padding: 14px;
+    margin-bottom: 10px;
+    border: 2px solid #198754;
+    background: #fff;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all 0.2s;
+}
+
+.lang-btn:hover,
+.lang-btn:active {
+    background: #198754;
+    color: #fff;
+}
+
+.lang-native {
+    display: block;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.lang-english {
+    display: block;
+    font-size: 12px;
+    opacity: 0.7;
+}
+
+.modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1000;
+    padding: 16px;
+}
+
+.modal-box {
+    background: #fff;
+    border-radius: 12px;
+    padding: 20px;
+    width: 100%;
+    max-width: 450px;
+    max-height: 90vh;
+    overflow-y: auto;
+}
+
+.animal-card {
+    background: #fff;
+    border-radius: 12px;
+    padding: 16px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+    cursor: pointer;
+    transition: transform 0.2s;
+}
+
+.animal-card:active {
+    transform: scale(0.98);
+}
+
+.status-dot {
+    display: inline-block;
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    margin-right: 6px;
+}
+
+.status-ok {
+    background: #198754;
+}
+
+.status-due {
+    background: #ffc107;
+}
+
+.status-overdue {
+    background: #dc3545;
+}
